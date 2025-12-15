@@ -1,0 +1,199 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Full screen container */
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+/* Card */
+.form {
+  width: 380px;
+  background: #020617;
+  color: #ffffff;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.form h2 {
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+/* Error */
+.error {
+  background: #7f1d1d;
+  color: #fecaca;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+/* Input fields */
+.email,
+.password {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.email input,
+.password input {
+  width: 100%;
+  padding: 14px 12px;
+  background: transparent;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #ffffff;
+  outline: none;
+}
+
+.email label,
+.password label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.3s;
+  background: #020617;
+  padding: 0 6px;
+}
+
+/* Floating labels */
+.email input:focus + label,
+.email input:valid + label,
+.password input:focus + label,
+.password input:valid + label {
+  top: -8px;
+  font-size: 12px;
+  color: #38bdf8;
+}
+
+/* Password eye icon */
+.password span {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #94a3b8;
+}
+
+/* Options section */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;        /* 🔥 Fix alignment */
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.options input[type="checkbox"] {
+  margin: 0;
+}
+
+.options a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Main button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  color: #020617;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #16a34a;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* Social buttons */
+.social {
+  display: flex;
+  gap: 10px;
+}
+
+.social button {
+  flex: 1;
+  background: #020617;
+  color: #ffffff;
+  border: 1px solid #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.social button:hover {
+  background: #020617;
+  border-color: #38bdf8;
+}
+
+/* Switch text */
+.switch {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.switch span {
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+.switch span:hover {
+  text-decoration: underline;
+}
